@@ -1,0 +1,12 @@
+
+venv/
+.conda/
+__pycache__/
+*.pyc
+.env
+
+data/videos/*
+data/logs/*
+
+yolov8n.pt
+outputs/

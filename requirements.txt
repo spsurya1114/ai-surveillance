@@ -1,0 +1,9 @@
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
+sentence-transformers
+faiss-cpu
+python-dotenv
+groq
