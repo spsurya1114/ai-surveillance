@@ -1,12 +1,12 @@
-
 venv/
 .conda/
 __pycache__/
 *.pyc
+*.pyo
 .env
-
+evidence/
 data/videos/*
 data/logs/*
-
 yolov8n.pt
 outputs/
+test_config.json

@@ -1,0 +1,56 @@
+{
+  "loitering_threshold": 5.0,
+  "restricted_zones": {
+    "CAM_01": [
+      {
+        "name": "zone_A",
+        "polygon": [[0, 0], [250, 0], [250, 1080], [0, 1080]]
+      }
+    ],
+    "CAM_02": [
+      {
+        "name": "zone_B",
+        "polygon": [[300, 200], [600, 200], [600, 800], [300, 800]]
+      }
+    ]
+  },
+  "allowed_directions": {
+    "CAM_01": {
+      "angle": 90,
+      "tolerance": 45
+    },
+    "CAM_02": {
+      "angle": 180,
+      "tolerance": 60
+    }
+  },
+  "velocity_threshold": 100.0,
+  "crowd_threshold": 3,
+  "abandoned_object_threshold": 10.0,
+  "risk_weights": {
+    "loitering": 25,
+    "intrusion": 40,
+    "wrong_direction": 20,
+    "sudden_movement": 20,
+    "crowd_anomaly": 15,
+    "abandoned_object": 30
+  },
+  "risk_combination_window": 30.0,
+  "alert_threshold": "HIGH",
+  "alert_cooldown": 60.0,
+  "evidence": {
+    "save_dir": "evidence",
+    "save_images": true,
+    "save_clips": true,
+    "clip_before_sec": 3.0,
+    "clip_after_sec": 2.0
+  },
+  "camera_start_times": {
+    "CAM_01": "2026-08-23T10:00:00",
+    "CAM_02": "2026-08-23T10:05:00",
+    "CAM_03": "2026-08-23T10:10:00"
+  },
+  "tracking": {
+    "max_missing_frames": 30
+  }
+}
